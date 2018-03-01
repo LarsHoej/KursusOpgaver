@@ -10,8 +10,8 @@ namespace OpgVariable
     {
         struct Person
         {
-            public int id;
-            public string navn;
+            public int Id;
+            public string Navn;
         }
 
         static void Main(string[] args)
@@ -40,10 +40,10 @@ namespace OpgVariable
             Console.WriteLine(datetime.ToString("dMy"));
 
             Person p = new Person();
-            p.id = 1;
-            p.navn = "Mikkel";
+            p.Id = 1;
+            p.Navn = "Mikkel";
 
-            Console.WriteLine(p.navn);
+            Console.WriteLine(p.Navn);
     }
     }
     public enum Filtyper { csv, pdf, txt };
