@@ -13,9 +13,15 @@ namespace Opg_10_HelloWorld
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
+
+                int a;
+                a = (int)(2 - 2 * 2);
+                Console.WriteLine(a.ToString());
+
+
                 Console.WriteLine("Press any key");
                 Console.ReadKey();
-
+                
             }
         }
     }
