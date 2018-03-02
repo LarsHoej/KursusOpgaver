@@ -26,13 +26,11 @@ namespace BeregnArray
             }
         }
 
-        public static arrayresult BeregnArray(int[] a)
+        public static Arrayresult BeregnArray(int[] a)
         {
 
-            arrayresult result = new arrayresult();
-            result.gennemsnit = 0;
-            result.sum = 0;
-
+            Arrayresult result = new Arrayresult { gennemsnit=0,sum=0};
+            
             for (int i = 0; i < a.Length; i++)
             {
                 result.sum += a[i];
@@ -45,7 +43,7 @@ namespace BeregnArray
 
         }
 
-        public struct arrayresult
+        public struct Arrayresult
         {
             public double sum;
             public double gennemsnit;

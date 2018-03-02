@@ -39,10 +39,9 @@ namespace OpgVariable
             Console.WriteLine(datetime.ToString("ddMMyy"));
             Console.WriteLine(datetime.ToString("dMy"));
 
-            Person p = new Person();
-            p.Id = 1;
-            p.Navn = "Mikkel";
-
+            //Person p = new Person({ Id = 1, Navn = "Mikkel" }));
+            Person p = new Person { Id=1,Navn="Mikkel"};
+            
             Console.WriteLine(p.Navn);
     }
     }

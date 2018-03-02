@@ -12,7 +12,7 @@ namespace Overload
 
             Console.WriteLine(Beregn(1,2));
             Console.WriteLine(Beregn(1, 2,3));
-            Console.WriteLine(Beregn(1, 2,4,5));
+            Console.WriteLine(Beregn(1, 2, 4, 5));
 
             
             // Keep console window open when using the debugger (F5)
