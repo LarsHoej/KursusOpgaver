@@ -1,0 +1,43 @@
+﻿--- Format/ToString (M. Cronberg) ---
+
+// Numbers            
+// https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx
+
+double tal = 20034.3347;
+Console.WriteLine(tal.ToString());        // 20034,3347
+Console.WriteLine(tal.ToString("N2"));    // 20.034,33
+Console.WriteLine(tal.ToString("N3"));    // 20.034,335
+Console.WriteLine(tal.ToString("F2"));    // 20034,33
+Console.WriteLine(tal.ToString("C2"));    // 20.034,33 kr.
+
+// to en-US (requires using System.Globalization;)
+Console.WriteLine(
+    tal.ToString("N2", 
+    new CultureInfo("en-US")));           // 20,034.33
+
+double pct  = 0.25;
+Console.WriteLine(pct.ToString("P2"));    // 25,00 %
+
+
+// Date / time
+// https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx
+DateTime now = DateTime.Now;
+Console.WriteLine(now.ToString("d"));     // 02-05-2017
+Console.WriteLine(now.ToString("f"));     // 2. maj 2017 14:06
+Console.WriteLine(
+    now.ToString("dd-MM-yyyy"));          // 02-05-2017
+
+Console.WriteLine(
+    now.ToString("d-M-yy"));              // 2-5-17 
+
+Console.WriteLine(
+    now.ToString("dddd d. MMMM"));        // tirsdag 2. maj
+
+Console.WriteLine(
+    now.ToString("s"));                   // 2017-05-02T14:08:06
+
+Console.WriteLine(
+    now.ToString("t"));                   // 14:08
+
+Console.WriteLine(
+    now.ToString("T"));                   // 14:08:25
