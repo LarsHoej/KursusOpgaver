@@ -18,17 +18,17 @@ namespace KortStack
 
     public class Bunke
     {
-        private Stack<Kort> stack = new Stack<Kort>();
+        private Stack<Kort> bunke = new Stack<Kort>();
 
         public void TilføjKort(Kort k)
         {
-            stack.Push(k);
+            bunke.Push(k);
         }
 
         public Kort FjernKort()
         {
-            if (stack.Count > 0)
-                return stack.Pop();
+            if (bunke.Count > 0)
+                return bunke.Pop();
             else
                 return new Kort();
             
@@ -36,7 +36,7 @@ namespace KortStack
 
         public void Vis()
         {
-            foreach (var item in stack)
+            foreach (var item in bunke)
             {
                 Console.WriteLine(item);
             }

@@ -66,7 +66,7 @@ namespace RepositoryApp
     {
         public static IPersonRespository GetPersonRepository()
         {
-            string repository = System.Configuration.ConfigurationManager.AppSettings["PersonRepository"];
+            string repository = System.Configuration.ConfigurationManager .AppSettings["PersonRepository"];
             
             switch (repository)
             {
