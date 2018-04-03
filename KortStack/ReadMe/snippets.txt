@@ -1,0 +1,12 @@
+﻿--- Useful snippets (M. Cronberg) ---
+
+Enter shortcut and press the tab-key twice (eg. "for" + tab + tab)
+
+for = for loop
+try = try catch
+do = do/while
+if = if
+cw = Console.WriteLine()
+
+
+Use the Snippet Designer extension to create your own
